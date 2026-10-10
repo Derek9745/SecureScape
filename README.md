@@ -1,16 +1,4 @@
-# React + Vite
+# SecureScape
+A cybersecurity Escape Room
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+SecureScape is an interactive, escape-room-style security awareness training platform designed for security training, modeled after commercial tools like Campus Guard. Rather than delivering security concepts through a passive slideshow or quiz, SecureScape immerses participants in a series of themed "rooms," each built around a real-world attack scenario, phishing emails, weak passwords, social engineering, unsecured devices, and physical tailgating. Users must correctly identify the security flaw or apply the right countermeasure to "unlock" each room and progress, reinforcing recognition and response skills through active problem-solving rather than memorization.
