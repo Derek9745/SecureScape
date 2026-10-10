@@ -68,5 +68,16 @@ export default function App() {
   }, []) // Empty dependency array is correct
 
   // Changed height to 100vh to accurately span the full viewport height
-  return <div ref={mountRef} style={{ width: '100vw', height: '100vh' }} />
+  return (
+  <div className="app">
+    <div
+      ref={mountRef}
+      style={{ width: '100vw', height: '100vh' }}
+    />
+
+    <div className="hud">
+      Bottom HUD 
+    </div>
+  </div>
+)
 }
