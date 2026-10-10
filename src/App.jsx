@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 import { useEffect, useRef } from 'react'
 import * as THREE from 'three'
@@ -75,8 +72,21 @@ export default function App() {
       style={{ width: '100vw', height: '100vh' }}
     />
 
+    
+    <div className = "upperMenuBar">
+       <button> <div>User Profile</div></button>
+        <button><div>LeaderBoard</div></button>
+        <button><div>Save</div></button>
+        <button><div>Load </div></button>
+        <button><div>Challenges Completed List</div></button>
+    </div>
+
+
+
     <div className="hud">
-      Bottom HUD 
+      <div class = "hflex">
+       User Interface
+      </div>
     </div>
   </div>
 )
