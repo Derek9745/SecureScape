@@ -119,3 +119,18 @@ position: absolute;
   
 }
 
+.menuButton {
+  padding: 10px 20px;
+  background-color: #7689a8; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+
+
+.menuButton:hover {
+  background-color: #19dc20; 
+  transform: scale(1.05);    
+}
+

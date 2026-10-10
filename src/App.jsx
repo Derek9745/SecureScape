@@ -18,7 +18,7 @@ export default function App() {
     const renderer = new THREE.WebGLRenderer({ antialias: true })
     renderer.setSize(window.innerWidth, window.innerHeight)
     
-    // Clear out any old canvas before appending a new one (fixes React Strict Mode duplicate bug)
+    // Clear out any old canvas before appending a new one 
     if (mountRef.current) {
       mountRef.current.innerHTML = ''
       mountRef.current.appendChild(renderer.domElement)
@@ -64,6 +64,7 @@ export default function App() {
     }
   }, []) // Empty dependency array is correct
 
+
   // Changed height to 100vh to accurately span the full viewport height
   return (
   <div className="app">
@@ -74,14 +75,15 @@ export default function App() {
 
     
     <div className = "upperMenuBar">
-       <button> <div>User Profile</div></button>
-        <button><div>LeaderBoard</div></button>
-        <button><div>Save</div></button>
-        <button><div>Load </div></button>
-        <button><div>Challenges Completed List</div></button>
+      <h3>Securescape</h3>
+      <div className = "upperMenuBarVBox">
+       <button class = "menuButton"> <div>User Profile</div></button>
+        <button class = "menuButton"><div>LeaderBoard</div></button>
+        <button class = "menuButton"><div>Save</div></button>
+        <button class = "menuButton"><div>Load </div></button>
+        <button class = "menuButton"><div>Challenges Completed List</div></button>
+        </div>
     </div>
-
-
 
     <div className="hud">
       <div class = "hflex">
@@ -89,5 +91,10 @@ export default function App() {
       </div>
     </div>
   </div>
+
+  
 )
+
+
+
 }
