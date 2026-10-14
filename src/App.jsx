@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import './App.css'
+import UserProfile from './UserProfile'
 import { useEffect, useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 import * as THREE from 'three'
 
 export default function App() {
   const mountRef = useRef(null)
+  const navigate = useNavigate()
 
   useEffect(() => {
     // 1. Scene, Camera, and Renderer
@@ -77,7 +80,7 @@ export default function App() {
     <div className = "upperMenuBar">
       <h3>Securescape</h3>
       <div className = "upperMenuBarVBox">
-       <button class = "menuButton"> <div>User Profile</div></button>
+       <button class = "menuButton" onClick={() => navigate('/profile')}> <div>User Profile</div></button>
         <button class = "menuButton"><div>LeaderBoard</div></button>
         <button class = "menuButton"><div>Save</div></button>
         <button class = "menuButton"><div>Load </div></button>
