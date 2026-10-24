@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import UserProfile from './UserProfile'
+import Email_phishing from './email_phishing'
 import { useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import * as THREE from 'three'
@@ -85,6 +86,7 @@ export default function App() {
         <button class = "menuButton"><div>Save</div></button>
         <button class = "menuButton"><div>Load </div></button>
         <button class = "menuButton"><div>Challenges Completed List</div></button>
+        <button class = "menuButton" onClick={() => navigate('/email_phishing')}><div>Email Phishing</div></button>
         </div>
     </div>
 
