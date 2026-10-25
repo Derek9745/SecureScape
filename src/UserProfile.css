@@ -1,9 +1,11 @@
 .profilePage {
   position: fixed;
+  height: 100vh;                    
+  display: flex;            
+  flex-direction: column;
   inset: 0;
   z-index: 1000;
-  min-height: 100vh;
-  overflow-y: auto;
+  overflow: hidden;
   background: #0b1020;
   color: #ffffff;
   font-family: Arial, sans-serif;
@@ -17,8 +19,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 16px 40px;        
   border-bottom: 1px solid #253047;
+  flex-shrink: 0;           
 }
 
 .profileHeader h1 {
@@ -29,12 +32,18 @@
 
 .profileButton {
   padding: 12px 18px;
-  background: #00ff88;
-  color: #0b1020;
+  background:#344158;
+  color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: all 0.3s ease; 
 }
+.profileButton:hover {
+  background-color: #19dc20; 
+  transform: scale(1.05);    
+}
+
 
 .profileContent {
   max-width: 900px;
@@ -66,13 +75,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 75px;
-  height: 75px;
+  width: 64px;
+  height: 64px;
   margin: 0 auto 15px;
   border-radius: 50%;
   background: #00ff88;
   color: #0b1020;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
 }
 
