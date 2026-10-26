@@ -1,6 +1,11 @@
 import { useNavigate } from 'react-router-dom'
 import Carousel from 'react-bootstrap/Carousel'
 import './email_phishing.css'
+import email1 from './assets/p_email_Ex1.jpg'
+import email2 from './assets/p_email_Ex2.jpg'
+import email3 from './assets/p_email_Ex3.jpg'
+
+
 
 export default function Email_phishing() {
   const navigate = useNavigate()
@@ -31,33 +36,25 @@ export default function Email_phishing() {
         <section className="emails">
             <Carousel slide={false}>
                 <Carousel.Item>
-                    <div className="emailSlide">
-                        <h3>Example Email 1</h3>
-                    </div>
-                        <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
+                    <img 
+                    className="emailSlide"
+                    src={email1}
+                    alt="Phisihing Email"    
+                    />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <div className="emailSlide">
-                        <h3>Example Email 2</h3>
-                    </div>
-                        <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
+                    <img 
+                    className="emailSlide"
+                    src={email2}
+                    alt="Phisihing Email"    
+                    />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <div className="emailSlide">
-                        <h3>Example Email 3</h3>
-                    </div>
-                        <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                            </p>
-                            </Carousel.Caption>
+                    <img 
+                    className="emailSlide"
+                    src={email3}
+                    alt="Phisihing Email"    
+                    />
                 </Carousel.Item>
             </Carousel>
         </section>

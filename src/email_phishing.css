@@ -65,8 +65,12 @@
   margin: 30px auto;
 }
 
+.emails img {
+  max-width: 700px;
+  margin: 30px auto;
+}
 .emailSlide {
-  min-height: 250px;
+  min-height: 300px;
   padding: 35px;
   background-color: #00ff88;
   color: #222222;
@@ -80,6 +84,11 @@
 
 .emailSlide p {
   margin-bottom: 12px;
+}
+
+.emails .carousel-control-prev-icon,
+.emails .carousel-control-next-icon {
+  filter: brightness(0);
 }
 
 
