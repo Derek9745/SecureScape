@@ -1,6 +1,7 @@
 
 import './App.css'
 import Login from './Login'
+import Signup from './Signup'
 import UserProfile from './UserProfile'
 import CheckList from './CheckList'
 import { useEffect, useRef,useState} from 'react'

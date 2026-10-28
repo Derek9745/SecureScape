@@ -1,13 +1,9 @@
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
-import Carousel from 'react-bootstrap/Carousel'
-import Offcanvas from 'react-bootstrap/Offcanvas'
 import Button from 'react-bootstrap/Button'
-import './email_phishing.css'
-import email1 from './assets/p_email_Ex1.jpg'
-import email2 from './assets/p_email_Ex2.jpg'
-import email3 from './assets/p_email_Ex3.jpg'
-import email4 from './assets/emailex4.jpg'
+import Form from 'react-bootstrap/Form'
+import './Login.css'
+
 
 export default function Email_phishing() {
     const navigate = useNavigate()
@@ -23,7 +19,7 @@ export default function Email_phishing() {
 
         <Button
           className="LoginButton"
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/Signup')}
         >
           Sign Up
         </Button>
@@ -34,6 +30,28 @@ export default function Email_phishing() {
         <p className="LoginSubtitle">
           Enter your credentials here:
         </p>
+
+        <section>
+          <Form>
+            <Form.Group className='username_box'>
+              <Form.Label>Username:</Form.Label>
+              <Form.Control placeholder='Enter Username'/>
+            </Form.Group>
+            <Form.Group className='password_box'>
+              <Form.Label>Password:</Form.Label>
+              <Form.Control placeholder='Enter Password'/>
+            </Form.Group>
+          </Form>
+        </section>
+
+        <section>
+          <Button
+          className="SubmitLoginButton"
+          onClick={() => navigate('/profile')}
+        >
+          Log in
+        </Button>
+        </section>
        
       </main>
     </div>
