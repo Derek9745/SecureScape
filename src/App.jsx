@@ -1,5 +1,6 @@
 
 import './App.css'
+import Login from './Login'
 import UserProfile from './UserProfile'
 import CheckList from './CheckList'
 import { useEffect, useRef,useState} from 'react'
@@ -88,7 +89,7 @@ export default function App() {
     <div className = "upperMenuBar">
       <h3>Securescape</h3>
       <div className = "upperMenuBarVBox">
-       <button class = "menuButton" onClick={() => navigate('/profile')}> <div>User Profile</div></button>
+        <button class = "menuButton" onClick={() => navigate('Login')}> <div>User Profile</div></button>
         <button class = "menuButton"><div>LeaderBoard</div></button>
         <button class = "menuButton"><div>Save</div></button>
         <button class = "menuButton"><div>Load </div></button>
