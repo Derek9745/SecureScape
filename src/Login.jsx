@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form'
 import './Login.css'
 
 
-export default function Email_phishing() {
+export default function Login() {
     const navigate = useNavigate()
     const [show, setShow] = useState(false)
     const handleClose = () => setShow(false)
