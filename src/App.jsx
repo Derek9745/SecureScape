@@ -21,21 +21,43 @@ export default function App() {
 
   useEffect(() => {
     // 1. Scene, Camera, and Renderer
-    const scene = new THREE.Scene()
+    const scene = new THREE.Scene();
+
+    scene.background = new THREE.Color(0x080b10);
+
     const camera = new THREE.PerspectiveCamera(
       75,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
-    )
-    const renderer = new THREE.WebGLRenderer({ antialias: true })
-    renderer.setSize(window.innerWidth, window.innerHeight)
+    );
+
+    const renderer = new THREE.WebGLRenderer({
+      antialias: true
+    });
+
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
     
-    // Clear out any old canvas before appending a new one 
+    // Clear out any old canvas befoare appending a new one 
     if (mountRef.current) {
       mountRef.current.innerHTML = ''
       mountRef.current.appendChild(renderer.domElement)
     }
+
+  // General ambient lighting
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+  scene.add(ambientLight);
+
+  // Green security light from the front
+  const securityLight = new THREE.PointLight(0x19dc20, 50, 20);
+  securityLight.position.set(2, 2, 5);
+  scene.add(securityLight);
+
+  // White light from the front-left
+  const frontLight = new THREE.DirectionalLight(0xffffff, 2);
+  frontLight.position.set(-3, 3, 5);
+  scene.add(frontLight);
 
     // 2. Create a Cube
     const geometry = new THREE.BoxGeometry()
@@ -92,19 +114,24 @@ export default function App() {
       <div className = "upperMenuBarVBox">
         <button class = "menuButton" onClick={() => navigate('Login')}> <div>User Profile</div></button>
         <button class = "menuButton"><div>LeaderBoard</div></button>
-        <button class = "menuButton"><div>Save</div></button>
-        <button class = "menuButton"><div>Load </div></button>
+        <button class = "menuButton"onClick= {()=> navigate('/Load')}><div>Load/Save </div></button>
         <button class = "menuButton" onClick= {()=> navigate('/Checklist')}><div>Challenges Completed List</div></button>
          <button class = "menuButton" onClick={() => navigate('/email_phishing')}><div>Email Phishing</div></button>
         </div>
     </div>
 
-    <div className="hud">
-      <div class = "hflex">
-       User Interface
+        <div className="hud">
+        <div className="typewriter">
+          <p>Welcome to SecureScape......</p>
+        </div>
+
+        <button className="startButton" onClick={()=> navigate('/Game')}>
+          Begin Escape
+        </button>
       </div>
+
     </div>
-  </div>
+
 
   
 )

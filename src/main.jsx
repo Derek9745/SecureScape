@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import CheckList from './CheckList'; 
 import Login from './Login.jsx'
 import Signup from './Signup.jsx'
+import Load from './Load.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/profile" element={<UserProfile />} />
         <Route path="/email_phishing" element={<Email_phishing />} />
         <Route path="/CheckList" element={<CheckList/>} />
+        <Route path ="/Load" element = {<Load/>}/>
       </Routes>
     </BrowserRouter>
   </StrictMode>,
