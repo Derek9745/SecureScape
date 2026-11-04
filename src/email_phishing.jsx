@@ -9,6 +9,7 @@ import email2 from './assets/p_email_Ex2.jpg'
 import email3 from './assets/p_email_Ex3.jpg'
 import email4 from './assets/emailex4.jpg'
 import { OffcanvasBody } from 'react-bootstrap'
+import { markCompleted } from './challenges'
 
 export default function Email_phishing() {
     const navigate = useNavigate()
@@ -24,7 +25,10 @@ export default function Email_phishing() {
     const handleClick1 = () => setClicked1(true)
     const handleClick2 = () => setClicked2(true)
     const handleClick3 = () => setClicked3(true)
-    const handleClick4 = () => setClicked4(true)
+    const handleClick4 = () => {
+        setClicked4(true)
+        markCompleted('email_phishing')
+    }
 
 
 
@@ -98,28 +102,28 @@ export default function Email_phishing() {
                     <Button className='quizchoice' size="lg" 
                     disabled={gotClicked1}
                     onClick={handleClick1}>
-                        {gotClicked1 ? 'Pay attention to what information they are asking for!' : 'Email 1'}
+                        {gotClicked1 ? 'Phishing. Legitimate companies will not ask you to confirm account details through a link in an email. Go to the site directly instead.' : 'Email 1'}
                     </Button>
                     </section>
                     <section>
                     <Button className='quizchoice' size="lg" 
                     disabled={gotClicked2}
                     onClick={handleClick2}>
-                        {gotClicked2 ? 'Seems like you are being rushed to take action! ' : 'Email 2'}
+                        {gotClicked2 ? 'Phishing. Threats like "your account will be closed" push you to act before you think. Urgency is a classic pressure tactic.' : 'Email 2'}
                     </Button>
                     </section>
                     <section>
                     <Button className='quizchoice' size="lg" 
                     disabled={gotClicked3}
                     onClick={handleClick3}>
-                        {gotClicked3 ? 'Would the IRS contact you over email?' : 'Email 3'}
+                        {gotClicked3 ? 'Phishing. The IRS first contacts people by postal mail and does not demand payment or personal details by email. Impersonating an authority is a common trick.' : 'Email 3'}
                     </Button>
                     </section>
                     <section>
                     <Button className='quizchoice' size="lg" 
                     disabled={gotClicked4}
                     onClick={handleClick4}>
-                        {gotClicked4 ? 'Correct!' : 'Email 4'}
+                        {gotClicked4 ? 'Correct! This email makes no urgent threat and does not ask you for sensitive details. Still, verify through the official site if in doubt.' : 'Email 4'}
                     </Button>
                     </section>
                     

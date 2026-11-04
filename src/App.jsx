@@ -112,11 +112,11 @@ export default function App() {
     <div className = "upperMenuBar">
       <h3>Securescape</h3>
       <div className = "upperMenuBarVBox">
-        <button class = "menuButton" onClick={() => navigate('Login')}> <div>User Profile</div></button>
-        <button class = "menuButton"><div>LeaderBoard</div></button>
-        <button class = "menuButton"onClick= {()=> navigate('/Load')}><div>Load/Save </div></button>
-        <button class = "menuButton" onClick= {()=> navigate('/Checklist')}><div>Challenges Completed List</div></button>
-         <button class = "menuButton" onClick={() => navigate('/email_phishing')}><div>Email Phishing</div></button>
+        <button className = "menuButton" onClick={() => navigate('Login')}> <div>User Profile</div></button>
+        <button className = "menuButton"><div>LeaderBoard</div></button>
+        <button className = "menuButton"onClick= {()=> navigate('/Load')}><div>Load/Save </div></button>
+        <button className = "menuButton" onClick= {()=> navigate('/Checklist')}><div>Challenges Completed List</div></button>
+         <button className = "menuButton" onClick={() => navigate('/email_phishing')}><div>Email Phishing</div></button>
         </div>
     </div>
 
