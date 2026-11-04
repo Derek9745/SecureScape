@@ -11,6 +11,8 @@ import CheckList from './CheckList';
 import Login from './Login.jsx'
 import Signup from './Signup.jsx'
 import Load from './Load.jsx';
+import Game from './Game.jsx'
+import Challenge from './Challenge.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -23,6 +25,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/email_phishing" element={<Email_phishing />} />
         <Route path="/CheckList" element={<CheckList/>} />
         <Route path ="/Load" element = {<Load/>}/>
+        <Route path="/Game" element={<Game />} />
+        <Route path="/challenge/:id" element={<Challenge />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

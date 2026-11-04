@@ -1,0 +1,125 @@
+.challengeCard {
+  margin: 24px auto;
+  max-width: 720px;
+  text-align: left;
+}
+
+.challengeCard h3 {
+  text-align: center;
+}
+
+.challengeCard .questionCount {
+  color: #b0bdd0;
+  text-align: center;
+  margin: 0;
+}
+
+.scenario {
+  background: #141c33;
+  border-left: 4px solid #00ff88;
+  padding: 14px 16px;
+  border-radius: 6px;
+  margin: 16px 0;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.optionButton {
+  width: 100%;
+  padding: 14px 16px;
+  text-align: left;
+  background: #141c33;
+  color: #ffffff;
+  border: 1px solid #253047;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.optionButton:hover:not(:disabled) {
+  border-color: #00ff88;
+}
+
+.optionButton:disabled {
+  cursor: default;
+}
+
+.option.right .optionButton {
+  border-color: #00ff88;
+  background: #0f2a20;
+}
+
+.option.wrong .optionButton {
+  border-color: #ff5c5c;
+  background: #2a1216;
+}
+
+.feedback {
+  margin: 8px 4px 0;
+  color: #d5deec;
+}
+
+.option.wrong .feedback strong {
+  color: #ff5c5c;
+}
+
+.nextButton {
+  display: block;
+  margin: 24px auto 0;
+}
+
+.result {
+  text-align: center;
+}
+
+.takeaways {
+  text-align: left;
+  margin: 12px auto 24px;
+  max-width: 600px;
+}
+
+.takeaways li {
+  margin-bottom: 8px;
+}
+
+/* Game hub */
+.hubGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+  text-align: left;
+}
+
+.hubCard {
+  background: #141c33;
+  border: 1px solid #253047;
+  border-radius: 8px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hubCard h3 {
+  margin: 0;
+}
+
+.hubCard .concept {
+  color: #b0bdd0;
+  margin: 0;
+  flex: 1;
+}
+
+.hubCard.done {
+  border-color: #00ff88;
+}
+
+.badge-done {
+  color: #00ff88;
+  font-size: 14px;
+}
