@@ -36,6 +36,10 @@
   cursor: pointer;
 }
 
+.quizchoice {
+    margin: 20px;
+}
+
 .challengeContent {
   max-width: 900px;
   margin: 0 auto;
