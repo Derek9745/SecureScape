@@ -16,7 +16,7 @@ return (
 <div className="viewWrapper">
 <button
 className="returnButton menuButton"
-onClick={() => navigate('/')}
+onClick={() => navigate('/App')}
 >
 Return To Game
 </button>

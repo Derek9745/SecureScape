@@ -39,7 +39,7 @@ export default function Email_phishing() {
 
         <Button
           className="challengeButton"
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/App')}
         >
           Return to Game
         </Button>

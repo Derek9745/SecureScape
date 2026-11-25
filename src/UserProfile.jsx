@@ -11,7 +11,7 @@ export default function UserProfile() {
 
         <button
           className="profileButton"
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/App')}
         >
           Return to Game
         </button>

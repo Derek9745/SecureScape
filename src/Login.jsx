@@ -47,7 +47,7 @@ export default function Login() {
         <section>
           <Button
           className="SubmitLoginButton"
-          onClick={() => navigate('/profile')}
+          onClick={() => navigate('/App')}
         >
           Log in
         </Button>

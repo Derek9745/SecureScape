@@ -12,7 +12,7 @@ export default function Game() {
     <div className="challengePage">
       <header className="challengeHeader">
         <h1>Securescape</h1>
-        <Button className="challengeButton" onClick={() => navigate('/')}>
+        <Button className="challengeButton" onClick={() => navigate('/App')}>
           Home
         </Button>
       </header>

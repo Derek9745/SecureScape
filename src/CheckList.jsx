@@ -9,7 +9,7 @@ function CheckList() {
 
   return (
     <div className="viewWrapper">
-      <button className="returnButton menuButton" onClick={() => navigate('/')}>
+      <button className="returnButton menuButton" onClick={() => navigate('/App')}>
         Return To Game
       </button>
 
