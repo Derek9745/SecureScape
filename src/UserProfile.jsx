@@ -13,7 +13,7 @@ export default function UserProfile() {
           className="profileButton"
           onClick={() => navigate('/App')}
         >
-          Return to Game
+          Go to Game Dashboard
         </button>
       </header>
 
